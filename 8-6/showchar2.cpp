@@ -15,8 +15,10 @@ int main(){
 	int lines,width;
 	printf("Enter a character and two integers:\n");
 	while(ch = getchar() != '\n'){
-		if(scanf("%d%d",&lines,&width) != 2)
+		if(scanf("%d%d",&lines,&width) != 2){
+			printf("ERROR!");
 			break;
+		}
 		display(ch,lines,width);
 		while(getchar() != '\n')
 			continue;
