@@ -11,6 +11,8 @@ char get_choice(){
 				case 'c':
 				case 'q':break;
 				default:printf("We just accept a,b,c and q.\n");
+						while(getchar() != '\n')
+							continue;
 						ch = getchar();
 						goto td;
 			}
