@@ -2,14 +2,21 @@
 
 char get_choice(){
 	char ch;
-	td: switch(ch = getchar()){
-	case 'a':
-	case 'b':
-	case 'c':
-	case 'q':break;
-	default:printf("We just accept a,b,c and q.\n");goto td;
+	while((ch = getchar()) != '\n'){
+		printf("switch:\n");
+		goto td;
+		td: switch(ch){
+				case 'a':
+				case 'b':
+				case 'c':
+				case 'q':break;
+				default:printf("We just accept a,b,c and q.\n");
+						ch = getchar();
+						goto td;
+			}
+			//getchar();
 	}
-
+	putchar(ch);
 	return ch;
 };
 
