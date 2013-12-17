@@ -1,17 +1,19 @@
 #include<stdio.h>
 #include<ctype.h>
-inline  
-	void clearline(){
+inline  void clearline(){
 		while(getchar() != '\n')
 			continue;	//跳过本行剩余部分
-}
+		}
 
 
 char get_first(){
 	int ch;
+
 	ch = getchar();
-	clearline;
-	return ch;
+	//clearline;
+	while(getchar() != '\n')
+			continue;
+	return ch;		//内联函数？
 };
 
 char get_choice(){
@@ -33,7 +35,7 @@ int get_int(){
 	while(scanf("%d",&input) != 1){
 		while((ch = getchar()) != '\n')
 			putchar(ch);
-		printf(" is not an integer.\nPlease enter an integer value, such as 25,-1");
+		printf(" is not an integer.\nPlease enter an integer value, such as 25,-1\n");
 	}
 	return input;
 }
@@ -46,7 +48,9 @@ void count(){
 	//scanf("%d",&n);
 	for(i = 1;i <= n;i++)
 		printf("%d\n",i);
-	clearline;
+	//clearline;
+	while(getchar() != '\n')
+			continue;
 }
 
 int main(){
