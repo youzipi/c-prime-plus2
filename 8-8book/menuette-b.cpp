@@ -13,7 +13,7 @@ char get_first(){
 	//clearline;
 	while(getchar() != '\n')
 			continue;
-	return ch;		//内联函数？
+	return ch;		//内联函数不适用？
 };
 
 char get_choice(){

@@ -1,5 +1,9 @@
 #include<stdio.h>
+
 int main(){
-	printf("OK\n");
+	putchar('H');
+	putchar('\007');
+	putchar('\nH++');	//输出最后一个字符
+	putchar('\b');
 	return 0;
 }
