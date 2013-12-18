@@ -10,6 +10,8 @@ char get_first(){
 	int ch;
 
 	ch = getchar();
+	while(isspace(ch))
+		ch = getchar();
 	//clearline;
 	while(getchar() != '\n')
 			continue;

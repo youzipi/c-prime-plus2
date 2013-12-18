@@ -24,11 +24,11 @@ char get_choice(){
 						ch = getchar();
 						goto td;
 						
-			}
+			}//switch
 		//printf("ch:%c|",ch);
 		//ch = getchar();
 		c = getchar();
-	}
+	}//while
 	printf("to main\n");
 	putchar(ch);
 	printf("ch:%c|\n",ch);
