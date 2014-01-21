@@ -1,10 +1,10 @@
-#pragma execution_character_set("utf-8")
+ï»¿#pragma execution_character_set("utf-8")
 #include<stdio.h>
 
 int main(){
 	putchar('H');
 	putchar('\007');
-	putchar('\nH++');	//Êä³ö×îºóÒ»¸ö×Ö·û
+	putchar('\nH++');	//è¾“å‡ºæœ€åä¸€ä¸ªå­—ç¬¦
 	putchar('\b');
 	return 0;
 }

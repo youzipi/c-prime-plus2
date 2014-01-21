@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+ï»¿#pragma execution_character_set("utf-8")
 #include<stdio.h>
 #include<iso646.h>
 //#include<stdbool.h>
@@ -12,7 +12,7 @@ int main(){
 	while(scanf("%lu",&num) == 1){
 		for (div = 2, isPrime = true; (div * div) <= num; div++){
 			if(num % div == 0){
-				if((div * div) not_eq num)		//ÍêÈ«Æ½·½Êý£¿
+				if((div * div) not_eq num)		//å®Œå…¨å¹³æ–¹æ•°ï¼Ÿ
 					printf("%lu is divisible by %lu and %lu.\n",num,div,num/div);
 				else
 					printf("%lu is divisible by %lu .\n",num,div);

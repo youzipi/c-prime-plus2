@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+ï»¿#pragma execution_character_set("utf-8")
 #include<stdio.h>
 #include<ctype.h>
 
@@ -9,11 +9,11 @@
 int main(){
 	char c;
 	char prev;
-	long n_chars = 0L;	//×Ö·ûÊı
-	int n_lines = 0;	//ĞĞÊı
-	int n_words = 0;	//µ¥´ÊÊı
-	int p_lines = 0;	//²»ÍêÕûµÄĞĞÊı
-	bool inword =false;	//cÔÚÒ»¸öµ¥´ÊÖĞ£¿
+	long n_chars = 0L;	//å­—ç¬¦æ•°
+	int n_lines = 0;	//è¡Œæ•°
+	int n_words = 0;	//å•è¯æ•°
+	int p_lines = 0;	//ä¸å®Œæ•´çš„è¡Œæ•°
+	bool inword =false;	//cåœ¨ä¸€ä¸ªå•è¯ä¸­ï¼Ÿ
 	//printf("%d %d",inword,!inword);
 	//printf("Enter text to be analyzed(| to terminate):\n");
 	//prev = '\n';

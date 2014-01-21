@@ -1,19 +1,19 @@
-#pragma execution_character_set("utf-8")
+ï»¿#pragma execution_character_set("utf-8")
 #include<stdio.h>
 
 int main(){
-	//printf()ºÍscanf()µÄ·µ»ØÖµ
+	//printf()å’Œscanf()çš„è¿”å›å€¼
 	int a = 20,b;
 	int rv;
 	char ch1,ch2;
 	rv = printf("123456890 %d\n",a);
-	printf("The printf () function printed %d characters.\n",rv=printf("123456890 %d\n",a));//printf()»á·µ»Ø´òÓ¡×Ö·ûµÄÊıÄ¿£¨º¬¿Õ¸ñ£¬»»ĞĞ×Ö·û£©
-	printf("The scanf () function scaned %d characters.\n",rv=scanf("%d%d",&a,&b));//scanf()»á·µ»ØÊäÈë±äÁ¿ÖµµÄ¸öÊı
+	printf("The printf () function printed %d characters.\n",rv=printf("123456890 %d\n",a));//printf()ä¼šè¿”å›æ‰“å°å­—ç¬¦çš„æ•°ç›®ï¼ˆå«ç©ºæ ¼ï¼Œæ¢è¡Œå­—ç¬¦ï¼‰
+	printf("The scanf () function scaned %d characters.\n",rv=scanf("%d%d",&a,&b));//scanf()ä¼šè¿”å›è¾“å…¥å˜é‡å€¼çš„ä¸ªæ•°
 
-	//×ª»»ËµÃ÷·û
+	//è½¬æ¢è¯´æ˜ç¬¦
 	//char ch1,ch2;
-	scanf(" %c",&ch1);//¶ÁÈ¡ÊäÈëµÄµÚÒ»¸ö·Ç¿Õ°××Ö·û
-	scanf("%c",&ch2);//¶ÁÈ¡ÊäÈëµÄµÚÒ»¸ö×Ö·û
+	scanf(" %c",&ch1);//è¯»å–è¾“å…¥çš„ç¬¬ä¸€ä¸ªéç©ºç™½å­—ç¬¦
+	scanf("%c",&ch2);//è¯»å–è¾“å…¥çš„ç¬¬ä¸€ä¸ªå­—ç¬¦
 	printf("%c%c",ch1,ch2);
 
 	return 0;
