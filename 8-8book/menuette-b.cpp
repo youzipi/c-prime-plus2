@@ -1,4 +1,4 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 #include<ctype.h>
 inline  void clearline(){
 		while(getchar() != '\n')
@@ -15,7 +15,7 @@ char get_first(){
 	//clearline;
 	while(getchar() != '\n')
 			continue;
-	return ch;		//ÄÚÁªº¯Êı²»ÊÊÓÃ£¿
+	return ch;		//å†…è”å‡½æ•°ä¸é€‚ç”¨ï¼Ÿ
 };
 
 char get_choice(){
@@ -28,6 +28,7 @@ char get_choice(){
 		printf("Please respond with a,b,c or q.\n");
 		ch = get_first();
 	}
+	putchar(ch);
 	return ch;
 };
 

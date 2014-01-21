@@ -4,7 +4,7 @@ void to_base_n(int num,int n){
 	int r;
 	r = num%n;
 	if(num >= n)
-		to_base_n(num/2,n);
+		to_base_n(num/n,n);
 	putchar('0' + r);
 	return;
 }
