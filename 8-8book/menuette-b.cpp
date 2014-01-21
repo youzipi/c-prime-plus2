@@ -3,7 +3,7 @@
 #include<ctype.h>
 inline  void clearline(){
 		while(getchar() != '\n')
-			continue;	//��������ʣ�ಿ��
+			continue;	//跳过本行剩余部分
 		}
 
 

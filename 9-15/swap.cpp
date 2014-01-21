@@ -1,5 +1,5 @@
-#include<stdio.h>
-void interchange(int * u,int * v){	//u,v Ϊָ�룬*u��*vΪint�ͱ���
+﻿#include<stdio.h>
+void interchange(int * u,int * v){	//u,v 为指针，*u，*v为int型变量
 	int temp;
 	temp = *u;
 	*u = *v;
