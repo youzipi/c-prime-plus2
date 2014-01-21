@@ -1,8 +1,9 @@
-ï»¿#include<stdio.h>
+ï»¿#pragma execution_character_set("utf-8")
+#include<stdio.h>
 #include<ctype.h>
 inline  void clearline(){
 		while(getchar() != '\n')
-			continue;	//Ìø¹ý±¾ÐÐÊ£Óà²¿·Ö
+			continue;	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½à²¿ï¿½ï¿½
 		}
 
 
@@ -62,7 +63,7 @@ int main(){
 		switch(choice){
 			case 'a':printf("Buy low,sell high.\n");
 					break;
-			case 'b':putchar('\a');//¾¯±¨
+			case 'b':putchar('\a');//ï¿½ï¿½ï¿½ï¿½
 					break;
 			case 'c':count();
 					break;
