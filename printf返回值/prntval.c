@@ -1,5 +1,6 @@
 ﻿#include<stdio.h>
 
+
 int main(){
 	//printf()和scanf()的返回值
 	int a = 20,b;
