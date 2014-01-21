@@ -1,8 +1,7 @@
+#pragma execution_character_set("utf-8")
 #include<stdio.h>
 
 int main(){
-
-
 	//printf()和scanf()的返回值
 	int a = 20,b;
 	int rv;
@@ -20,5 +19,4 @@ int main(){
 	return 0;
 	//double w = 25.36;
 	//printf("%*.*f\n",15,5,w);
-
 }
