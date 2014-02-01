@@ -1,3 +1,4 @@
+ï»¿#pragma execution_character_set("utf-8")
 #include<stdio.h>
 
 int main(){
@@ -5,7 +6,7 @@ int main(){
 	char ch;
 	while(scanf("%d",&input) != 1){
 		while((ch = getchar()) != '\n'){
-			printf("%d\n",input);		//ÊäÈë¡®j¡¯£¬Ã»ÓĞ¶ÁÈëinputÖĞ£¬ÁôÔÚ»º³åÇø£¬±»ch»ñÈ¡¡£
+			printf("%d\n",input);		//è¾“å…¥â€˜jâ€™ï¼Œæ²¡æœ‰è¯»å…¥inputä¸­ï¼Œç•™åœ¨ç¼“å†²åŒºï¼Œè¢«chè·å–ã€‚
 			putchar(ch);
 			printf(" is not an integer.\n");
 			break;

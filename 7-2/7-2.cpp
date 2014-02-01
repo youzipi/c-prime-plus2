@@ -1,3 +1,4 @@
+ï»¿#pragma execution_character_set("utf-8")
 #include<stdio.h>
 #include<ctype.h>
 //#define SPACE ' '
@@ -5,7 +6,7 @@ int main(){
 	char ch;
 	//ch = getchar();
 	while((ch = getchar()) != '\n'){
-		if(isalpha(ch))			//Èç¹ûchÊÇÒ»¸ö×ÖÄ¸
+		if(isalpha(ch))			//å¦‚æœchæ˜¯ä¸€ä¸ªå­—æ¯
 			putchar(ch+1);
 		else
 			putchar(ch);

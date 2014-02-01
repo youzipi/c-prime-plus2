@@ -1,8 +1,9 @@
+ï»¿#pragma execution_character_set("utf-8")
 #include<stdio.h>
 #include<ctype.h>
 inline  void clearline(){
 		while(getchar() != '\n')
-			continue;	//Ìø¹ı±¾ĞĞÊ£Óà²¿·Ö
+			continue;	//è·³è¿‡æœ¬è¡Œå‰©ä½™éƒ¨åˆ†
 		}
 
 
@@ -10,10 +11,12 @@ char get_first(){
 	int ch;
 
 	ch = getchar();
+	while(isspace(ch))
+		ch = getchar();
 	//clearline;
 	while(getchar() != '\n')
 			continue;
-	return ch;		//ÄÚÁªº¯Êı£¿
+	return ch;		//å†…è”å‡½æ•°ä¸é€‚ç”¨ï¼Ÿ
 };
 
 char get_choice(){
@@ -26,6 +29,7 @@ char get_choice(){
 		printf("Please respond with a,b,c or q.\n");
 		ch = get_first();
 	}
+	putchar(ch);
 	return ch;
 };
 
@@ -59,7 +63,7 @@ int main(){
 		switch(choice){
 			case 'a':printf("Buy low,sell high.\n");
 					break;
-			case 'b':putchar('\a');//¾¯±¨
+			case 'b':putchar('\a');//ï¿½ï¿½ï¿½ï¿½
 					break;
 			case 'c':count();
 					break;
